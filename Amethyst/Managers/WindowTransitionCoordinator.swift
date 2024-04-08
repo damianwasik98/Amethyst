@@ -161,6 +161,7 @@ class WindowTransitionCoordinator<Target: WindowTransitionTarget> {
         }
 
         target?.executeTransition(.moveWindowToSpaceAtIndex(focusedWindow, spaceIndex: space))
+        focusedWindow.focus()
     }
 
     func pushFocusedWindowToSpaceLeft() {
